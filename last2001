@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>The Head</title>
+<style type="text/css">
+    
+</style>
+</head>
+<body>
+
+<li><input type="text"size="50" id="lk"/></li> 
+
+<li><input type="checkbox" name="en" value="en" id="A" onclick="GetCheckedState()"/><span>A</span></li>  
+<li><input type="checkbox" name="en" value="en" id="B" onclick="GetCheckedState()"/><span>B</span></li>
+<li><input type="checkbox" name="en" value="en" id="C" onclick="GetCheckedState()"/><span>C</span></li>
+<li><input type="checkbox" name="en" value="en" id="D" onclick="GetCheckedState()"/><span>D</span></li>
+
+   
+</body>
+<script type="text/javascript">
+    function GetCheckedState() {
+       
+    var g=document.getElementById('lk');
+    g.value="";
+    if (document.getElementById('A').checked) {
+        g.value = g.value + "A"
+    }
+     if (document.getElementById('B').checked) {
+        g.value = g.value + "B"
+    }
+     if (document.getElementById('C').checked) {
+        g.value = g.value + "C"
+    }
+     if (document.getElementById('D').checked) {
+        g.value = g.value + "D"
+    }
+    }
+    
+    
+</script>
+</html>
